@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <title>Angular Project</title>
+
+    <!-- styling libraries -->
+    <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css'> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script> -->
+    <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script> -->
+    <!-- angular elements -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src='app.js'></script>
+    <script src='factories/loginFactory.js'></script>
+    <script src='controllers/loginController.js'></script>
+
+  </head>
+  <body>
+    <!-- <h1>Outside Partial View</h1> -->
+    <div ng-view>
+
+      </div>
+      <!-- The H1 header will NOT display in the partial after ng-view is inserted  -->
+      <!-- <h1>Text from index.html</h1> -->
+    </div>
+    <style media="screen">
+      body {
+        background-color: #0066cc;
+      }
+    </style>
+  </body>
+</html>

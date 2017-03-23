@@ -1,0 +1,13 @@
+<h1 style='color:orange;'>AWS Deployed Index Page</h1>
+<div ng-controller='loginController'>
+
+  <p style='color:white;'> Welcome, {{curUser.name}}!</p>
+  <p style='color:white;' ng-repeat="error in errors track by $index">
+  {{error}}
+  </p>
+  <form ng-submit='login()'>
+    Name: <input type="text" ng-model="logReg.name" placeholder="enter name here">
+    <input type='submit' value="login here">
+  </form>
+  <p><a href="/#/dash">Testing Link to Dash Page</a></p>
+</div>

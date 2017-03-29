@@ -1,7 +1,39 @@
 <h1 style='color:slategrey;'>AWS Deployed Dashboard</h1>
 <div ng-controller = 'loginController'>
-  <p style='color:white;'> Welcome, {{curUser.name}}!</p>
-  <p><a href="/logout">Logout</a></p>
-  <a href="/">Login Page</a>
+  <p style='color:white; font-size:48px;" '> Welcome, {{curUser.name}}!</p>
+
+<!-- </div> -->
+  <p><button type="button" name="button" formaction="/logout">Logout</button>
+  | <button type="button" name="button" formaction="/">Login Page</button></p>
+  <!-- <div ng-controller = 'loginController' class="btn-group"> -->
+  <button class="button" formaction="/logout">Logout</button>
+  <button class="button" formaction="/">Back to Login Page</button>
+
 
 </div>
+
+
+<style>
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    width: 250px;
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
+.p {
+
+}
+</style>
